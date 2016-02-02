@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../commons/jquery.min.js"></script>
+    <style type="text/css">
+        #duixiang {
+            width: 100px;
+            height: 100px;
+            background: darkred;
+            transform: rotate(90deg);
+            position: absolute;
+            z-index: 10;
+        }
+    </style>
+    <script type="text/javascript">
+        var jiaodu = 0;
+        function xuanzhuan() {
+            var dx = $("#duixiang");
+            dx.css({transform: "rotate(" + jiaodu + "deg)"});
+            jiaodu += 2;
+            if (jiaodu == 360) {
+                jiaodu = 0;
+            }
+            console.log("----");
+        }
+
+        //y=ax2+bx+c
+        var topLen = 0;
+        var leftLen = 0;
+        function yidong() {
+            var dx = $("#duixiang");
+            dx.css({top: topLen + "px", left: leftLen + "px"});
+            //topLen++;
+            leftLen++;
+            //topLen = leftLen * leftLen - 1001 * leftLen;
+            //x2=-2py（p>0）
+            topLen = leftLen * leftLen / 100.0;
+        }
+        $(function () {
+            setInterval(xuanzhuan, 1);
+            setInterval(yidong, 10);
+        });
+    </script>
+</head>
+<body>
+<div id="duixiang">
+</div>
+</body>
+</html>
