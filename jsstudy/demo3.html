@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #stage {
+            width: 500px;
+            height: 500px;
+            border: 5px solid saddlebrown;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<canvas id="stage">
+</canvas>
+<script>
+    var ctx = document.getElementById("stage").getContext("2d");
+    //画x轴
+    ctx.beginPath();
+    ctx.lineWidth = "5";
+    ctx.strokeStyle = "red"; // 红色路径
+    ctx.moveTo(0, 250);
+    ctx.lineTo(250,250);
+    ctx.stroke(); // 进行绘制
+    //画y轴
+</script>
+</body>
+</html>
