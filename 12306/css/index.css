@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 body {
     width: 100%;
     height: 100%;
@@ -13,7 +14,6 @@ body {
 
 .container {
     width: 960px;
-    height: 1000px;
     background: #ffffff;
     margin: 0 auto;
 }
@@ -122,7 +122,26 @@ body {
     width: 188px;
     height: 192px;
 }
-
+.ad_top2{
+    width: 188px;
+    height: 95px;
+    margin-top:3px;
+}
+.ad_top2 img{
+    border: 0;
+    width: 188px;
+    height: 95px;
+}
+.ad_top3{
+    width: 188px;
+    height: 57px;
+    margin-top:3px;
+}
+.ad_top3 img{
+    border: 0;
+    width: 188px;
+    height: 57px;
+}
 .ad_top img {
     border: 0;
     width: 188px;
@@ -217,6 +236,15 @@ body {
 
 .m10 {
     background: url("../img/item_z.png") no-repeat 8px -464px;
+}
+.m11 {
+    background: url("../img/item_z.png") no-repeat 8px -464px;
+}
+.m12 {
+    background: url("../img/item_z.png") no-repeat 8px -564px;
+}
+.m13 {
+    background: url("../img/item_z.png") no-repeat 8px -514px;
 }
 
 /**************************最新动态开始***************************************/
@@ -395,11 +423,80 @@ body {
     width: 550px;
     height: 333px;
     padding: 10px;
-    background: aqua;
+    background: #FFF;
 }
 
 .tab_body {
     width: 550px;
     height: 333px;
 }
+.ypxx-con{
+    width:100%;
+    height:100%;
+    background:#FFF;
+    padding:0;
+    border:1px solid #F3F3F3;
+}
+.ypxx-con thead tr{
+    background:#F3F3F3;
+    height:27px;
+    line-height:27px;
+}
+.ypxx-con td{
+    text-align:center;
+}
+.ypxx-con tbody td{
+    border:1px solid #F3F3F3;
+}
+.ypxx-con tbody td a{
+    text-decoration:none;
+    text-align:right;
+}
+.ypxx-con tfoot td span{
+    color:#FF0000;
+}
+.ypxx-con tfoot td a{
+    float: right;
+    text-decoration: none;
+}
 
+/***************相关链接开始********************/
+.xglj{
+    width:188px;
+    height:250px;
+    margin-top:3px;
+}
+.ljhead{
+    width:188px;
+    height:30px;
+    background:url("../img/ico_link001.gif");
+}
+.ljbody{
+    width:188px;
+    height:211px;
+    background:url("../img/ico_link002.gif") repeat-y;
+}
+.ljfoot{
+    width:188px;
+    height:9px;
+    background:url("../img/ico_link003.gif");
+}
+.ljbodymain{
+    width:178px;
+    margin-left:5px;
+    height:211px;
+    overflow:auto;
+}
+.ljbodymain ul{
+    list-style:none;
+}
+.ljbodymain ul li a {
+    COLOR: #000000;
+    TEXT-DECORATION: none;
+    font-size: 12px;
+}
+.ljbodymain ul li a:hover{
+    COLOR: #cc0000;
+    TEXT-DECORATION: underline;
+}
+/***************相关链接结束********************/
