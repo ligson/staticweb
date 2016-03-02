@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    cursor: url("../img/Red.PNG"), default;
+}
+
+.page1 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #EEE url("../img/bg1.jpg") repeat fixed;
+}
+
+.page1 p {
+    display: block;
+    color: #999999;
+    font-size: 32px;
+    padding-top: 25%;
+}
