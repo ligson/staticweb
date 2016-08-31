@@ -153,11 +153,11 @@ Date.parseFromText = function (text, parttern) {
         date.setMilliseconds(msecond);
     }
 
-    if (date.format(parttern) == text) {
-        return date;
-    } else {
-        throw  "日期无效";
+    if (date.format(parttern) != text) {
+        console.log("计算日期："+date.format(parttern));
+        console.log("正确日期："+text);
     }
+    return date;
 };
 
 /***
