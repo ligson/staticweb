@@ -157,7 +157,8 @@ Date.parseFromText = function (text, parttern) {
         console.log("计算日期："+date.format(parttern));
         console.log("正确日期："+text);
     }
-    return date;
+    return new Date(year,month,day,hour,minute,second);
+    //return date;
 };
 
 /***
